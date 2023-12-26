@@ -9,7 +9,7 @@ export const ContactsList = ({children }) => {
   const error = useSelector((state) => state.contacts.error);
   const contacts = useSelector((state) => state.contacts.items);
   const filter = useSelector((state) => state.filter);
-  const filteredContacts = contacts.filter((contact) =>
+  const filteredContacts = contacts?.filter((contact) =>
     contact.name.toLowerCase().includes(filter?.toLowerCase() || '')
   );
   console.log('Contacts:', contacts);
