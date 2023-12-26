@@ -24,7 +24,7 @@ export const ContactsList = ({children }) => {
     <>
    {children}
    {
-    (filteredContacts.length === 0 && !error)
+    (filteredContacts?.length === 0 && !error)
     ? (<p className={s.noMatchesVessage}>No contacts match your search</p>)
     : ( <ul className={s.listOfContacts}>
       {filteredContacts?.map(({name, phone, id}) => (
