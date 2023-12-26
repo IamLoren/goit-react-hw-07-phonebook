@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contacts/contactsSlice.js';
+import { addContactThunk } from '../../redux/operations.js';
 import s from './InputField.module.css';
 
 export const InputField = () => {
@@ -9,15 +9,15 @@ export const InputField = () => {
   const createContact = event => {
     event.preventDefault(); 
     const name = event.target.elements.name.value;
-    const number = event.target.elements.number.value;
+    const phone = event.target.elements.number.value;
     event.target.elements.name.value ='';
     event.target.elements.number.value = '';
-    if (contacts.some(contact => contact.name === name)) {
+    if (contacts.items.some(contact => contact.name === name)) {
       alert(`Contact with the name ${name} already exists!`);
       return;
     }
 
-    dispatch(addContact({ name, number }));
+    dispatch(addContactThunk({ name, phone }));
    
   };
 

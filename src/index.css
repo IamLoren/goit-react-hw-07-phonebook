@@ -10,8 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(243, 198, 198);
   background-image: url('./../src/img/eberhard-grossgasteiger-XAxEp-NKBiQ-unsplash.jpg');
-  background-size: 80%;
-  background-position: center;
+  background-size: 120%;
+  background-position: cover;
   background-repeat: no-repeat;
 }
 
