@@ -3,12 +3,12 @@ import s from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContactsThunk } from '../../redux/operations.js';
-
+import { selectError, selectContacts, selectFilter } from '../../redux/selectors.js'
 
 export const ContactsList = ({children }) => {
-  const error = useSelector((state) => state.contacts.error);
-  const contacts = useSelector((state) => state.contacts.items);
-  const filter = useSelector((state) => state.filter);
+  const error = useSelector(selectError);
+  const contacts = useSelector(selectContacts);
+  const filter = useSelector(selectFilter);
   const filteredContacts = contacts?.filter((contact) =>
     contact.name.toLowerCase().includes(filter?.toLowerCase() || '')
   );

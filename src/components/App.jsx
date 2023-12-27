@@ -3,10 +3,11 @@ import { ContactsList } from './contactsList/ContactsList';
 import { SearchFilter } from './SearchFilter/SearchFilter';
 import { useSelector } from 'react-redux';
 import { Hearts } from 'react-loader-spinner';
+import { selectError, selectLoading } from '../../redux/selectors.js'
 
 export const App = () => {
-  const loading = useSelector(state => state.contacts.isLoading);
-  const error = useSelector(state => state.contacts.error);
+  const loading = useSelector(selectLoading);
+  const error = useSelector(selectError);
 
   return (
     <div
