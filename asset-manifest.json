@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-react-hw-07-phonebook/static/css/main.e037090b.css",
-    "main.js": "/goit-react-hw-07-phonebook/static/js/main.73125ae0.js",
+    "main.js": "/goit-react-hw-07-phonebook/static/js/main.c5844406.js",
     "static/media/eberhard-grossgasteiger-XAxEp-NKBiQ-unsplash.jpg": "/goit-react-hw-07-phonebook/static/media/eberhard-grossgasteiger-XAxEp-NKBiQ-unsplash.8abb3cfef54dd757e6a7.jpg",
     "index.html": "/goit-react-hw-07-phonebook/index.html",
     "main.e037090b.css.map": "/goit-react-hw-07-phonebook/static/css/main.e037090b.css.map",
-    "main.73125ae0.js.map": "/goit-react-hw-07-phonebook/static/js/main.73125ae0.js.map"
+    "main.c5844406.js.map": "/goit-react-hw-07-phonebook/static/js/main.c5844406.js.map"
   },
   "entrypoints": [
     "static/css/main.e037090b.css",
-    "static/js/main.73125ae0.js"
+    "static/js/main.c5844406.js"
   ]
 }
